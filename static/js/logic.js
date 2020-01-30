@@ -35,7 +35,7 @@ d3.json(myurl, d =>{
             color: color,
             fillColor: color,
             radius : m.properties.mag * 10000
-        }).addTo(mymap)
+        }).bindPopup("<h2>" + m.properties.title + "</h2> <hr> <h3>" + m.properties.type + "</h3>").addTo(mymap);
     })
 });
 
